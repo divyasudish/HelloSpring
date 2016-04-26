@@ -60,6 +60,11 @@ public class TestGateway {
         return new ResponseEntity<ObjectList>(obj,HttpStatus.OK);
     }
 
+    @RequestMapping("/hello")
+    public String test(){
+        return "Helloooo";
+    }
+
     @RequestMapping("/test")
     public ResponseEntity<Test> getFunction(){
         Test test = new Test();
